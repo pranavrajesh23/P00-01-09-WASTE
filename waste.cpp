@@ -1,6 +1,22 @@
 #include<iostream>
 using namespace std;
 
+void checkReuse()
+{
+    cout<<"\n------------ Reusable Waste Check ------------\n";
+    cout<<"\nIs this a reusable waste? (yes/no)\n";
+    string check;
+    cin>>check;
+    if(check=="yes")
+    {
+        cout<<"\nThis waste can be reused for other applicatios.\n";
+    }
+    else{
+        cout<<"\nChecking for recyclable waste..\n";
+        // checkRecycle();
+    }
+}
+
 void checkOrganicWaste()
 {
     cout<<"\n------------ Organic Waste Check ------------\n";
@@ -22,7 +38,7 @@ void checkOrganicWaste()
     }
     else{
         cout<<"\nChecking for recyclable waste...\n";
-        // checkReuse();
+        checkReuse();
     }
 }
 
