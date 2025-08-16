@@ -1,6 +1,22 @@
 #include<iostream>
 using namespace std;
 
+
+void checkRecycle()
+{
+    cout<<"\n------------ Recyclable Waste Check ------------\n";
+    cout<<"\nIs this a recyclable waste? (yes/no)\n";
+    string check;
+    cin>>check;
+    if(check=="yes")
+    {
+        cout<<"\nThis waste can be recycled for other applications.\n";
+    }
+    else{
+        cout<<"\nThis waste is a landfill.\n";
+    }
+}
+
 void checkReuse()
 {
     cout<<"\n------------ Reusable Waste Check ------------\n";
