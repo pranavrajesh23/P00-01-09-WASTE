@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+void checkOrganicWaste()
+{
+    cout<<"\n------------ Organic Waste Check ------------\n";
+    cout<<"\nIs this a organic waste? (yes/no)\n";
+    string check;
+    cin>>check;
+    if(check=="yes")
+    {
+        cout<<"\nDoes this organic waste have high energy content? (yes/no)\n";
+        string energy;
+        cin>>energy;
+        if(energy=="yes")
+        {
+            cout<<"\nThis organic waste is a bio fuel source.\n";
+        }
+        else{
+            cout<<"\nThis organic waste is a organic fertilizer source.\n";
+        }
+    }
+    else{
+        cout<<"\nChecking for recyclable waste...\n";
+        // checkReuse();
+    }
+}
+
+int main()
+{
+    cout<<"------------- Waste Management System -------------\n";
+    cout<<"\nCollect waste\n";
+    checkOrganicWaste();
+}
